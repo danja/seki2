@@ -1,0 +1,37 @@
+08:05:45 WARN  No such directory for static content: /var/lib/openshift/54f1b2394382ec14b50001b9/app-root/runtime/repo/fuseki/../..
+08:05:45 WARN  You may need to set the --pages or --home option to configure static content correctly
+08:05:46 ERROR Does not exist: /home/danny/workspace-javascript/seki/data/FooWikiDB/
+com.hp.hpl.jena.assembler.exceptions.AssemblerException: caught: Does not exist: /home/danny/workspace-javascript/seki/data/FooWikiDB/
+  doing:
+    root: file:///var/lib/openshift/54f1b2394382ec14b50001b9/app-root/runtime/repo/fuseki/conf/foowiki-config.ttl#foowiki_dataset with type: http://jena.hpl.hp.com/2008/tdb#DatasetTDB assembler class: class com.hp.hpl.jena.tdb.assembler.DatasetAssemblerTDB
+
+	at com.hp.hpl.jena.assembler.assemblers.AssemblerGroup$PlainAssemblerGroup.openBySpecificType(AssemblerGroup.java:138)
+	at com.hp.hpl.jena.assembler.assemblers.AssemblerGroup$PlainAssemblerGroup.open(AssemblerGroup.java:117)
+	at com.hp.hpl.jena.assembler.assemblers.AssemblerGroup$ExpandingAssemblerGroup.open(AssemblerGroup.java:81)
+	at com.hp.hpl.jena.assembler.assemblers.AssemblerBase.open(AssemblerBase.java:52)
+	at com.hp.hpl.jena.assembler.assemblers.AssemblerBase.open(AssemblerBase.java:48)
+	at org.apache.jena.fuseki.server.FusekiConfig.processService(FusekiConfig.java:261)
+	at org.apache.jena.fuseki.server.FusekiConfig.configure(FusekiConfig.java:150)
+	at org.apache.jena.fuseki.FusekiCmd.exec(FusekiCmd.java:450)
+	at arq.cmdline.CmdMain.mainMethod(CmdMain.java:102)
+	at arq.cmdline.CmdMain.mainRun(CmdMain.java:63)
+	at arq.cmdline.CmdMain.mainRun(CmdMain.java:50)
+	at org.apache.jena.fuseki.FusekiCmd.main(FusekiCmd.java:167)
+Caused by: com.hp.hpl.jena.tdb.TDBException: Does not exist: /home/danny/workspace-javascript/seki/data/FooWikiDB/
+	at com.hp.hpl.jena.tdb.setup.DatasetBuilderStd.error(DatasetBuilderStd.java:336)
+	at com.hp.hpl.jena.tdb.setup.DatasetBuilderStd.checkLocation(DatasetBuilderStd.java:152)
+	at com.hp.hpl.jena.tdb.setup.DatasetBuilderStd.build(DatasetBuilderStd.java:176)
+	at com.hp.hpl.jena.tdb.setup.DatasetBuilderStd.create(DatasetBuilderStd.java:74)
+	at com.hp.hpl.jena.tdb.StoreConnection.make(StoreConnection.java:227)
+	at com.hp.hpl.jena.tdb.transaction.DatasetGraphTransaction.<init>(DatasetGraphTransaction.java:75)
+	at com.hp.hpl.jena.tdb.sys.TDBMaker._create(TDBMaker.java:57)
+	at com.hp.hpl.jena.tdb.sys.TDBMaker.createDatasetGraphTransaction(TDBMaker.java:45)
+	at com.hp.hpl.jena.tdb.TDBFactory._createDatasetGraph(TDBFactory.java:104)
+	at com.hp.hpl.jena.tdb.TDBFactory.createDatasetGraph(TDBFactory.java:73)
+	at com.hp.hpl.jena.tdb.assembler.DatasetAssemblerTDB.make(DatasetAssemblerTDB.java:58)
+	at com.hp.hpl.jena.tdb.assembler.DatasetAssemblerTDB.createDataset(DatasetAssemblerTDB.java:49)
+	at com.hp.hpl.jena.sparql.core.assembler.DatasetAssembler.open(DatasetAssembler.java:46)
+	at com.hp.hpl.jena.assembler.assemblers.AssemblerGroup$PlainAssemblerGroup.openBySpecificType(AssemblerGroup.java:130)
+	... 11 more
+[seki2-hyperdata.rhcloud.com logs]\> 
+

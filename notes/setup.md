@@ -39,6 +39,10 @@ ssh in,
 ssh 54f1b2394382ec14b50001b9@seki2-hyperdata.rhcloud.com
 cd $OPENSHIFT_LOG_DIR 
 
+git commit -am 'dfsdf'
+git push ssh://54f1b2394382ec14b50001b9@seki2-hyperdata.rhcloud.com/~/git/seki2.git/
+
+
 
 
 
