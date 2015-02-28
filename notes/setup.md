@@ -35,6 +35,10 @@ git remote add openshift ssh://54f192474382ecdefc00011e@seki2-hyperdata.rhcloud.
 
 check logs:
 ssh in, 
+
+ssh 54f1b2394382ec14b50001b9@seki2-hyperdata.rhcloud.com
 cd $OPENSHIFT_LOG_DIR 
+
+
 
 
