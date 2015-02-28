@@ -43,6 +43,11 @@ git commit -am 'dfsdf'
 git push ssh://54f1b2394382ec14b50001b9@seki2-hyperdata.rhcloud.com/~/git/seki2.git/
 
 
+fatal: reference is not a tree => http://stackoverflow.com/questions/2155887/git-submodule-head-reference-is-not-a-tree-error
+
+HEAD detached  => git checkout master
+
+
 
 
 
